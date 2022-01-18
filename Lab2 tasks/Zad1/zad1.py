@@ -9,15 +9,15 @@ def wczytaj_dane(plik):
 
     #end for
     #dane[0]=int(dane[0][0])
-    for i in dane:
-        i = list(map(int,i))
+    #for i in dane:
+       # i = list(map(int,i))
     #end for
     for x in range(len(dane)):
         #dane[x] = [int(i) for i in dane[x]]
         dane[x]=list(map(int,dane[x]))
     return dane
 #end def
-dane = (wczytaj_dane('dane.txt'))
+dane = (wczytaj_dane('dane_osobliwa.txt'))
 stopien_rown = dane[0][0]
 wspolczynnikiA= [x[:-1] for x in dane ]
 wspolczynnikiA = wspolczynnikiA[1:]

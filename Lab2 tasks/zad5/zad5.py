@@ -79,6 +79,7 @@ def deszyfruj(plik):
         #end for
     return dane
 #end def
+
 sz=szyfruj("tekst.txt")
 zapis=open('tekst_zaszyfrowany.txt','w')
 zapis.writelines(sz)
